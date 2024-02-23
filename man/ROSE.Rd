@@ -1,6 +1,5 @@
 \name{ROSE}
 \alias{ROSE}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Function to compute the region of statistical equivalence (ROSE) for an estimate at a given significance and power level.
 }
@@ -10,13 +9,12 @@ ROSE computes the region of statistical equivalence for an estimate at a given s
 \usage{
 ROSE(estimate, se, alpha = 0.05, power_target = 0.8, df = NA)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{estimate}{
 The estimate of interest. Numeric scalar.
   }
   \item{se}{
-The estimate of interest's standard error. Numeric scalar, strictly greater than zero.
+The standard error of the estimate of interest. Numeric scalar, strictly greater than zero.
   }
   }
   \item{alpha}{
@@ -35,7 +33,7 @@ Degrees of freedom. Numeric scalar, strictly greater than zero (if provided). If
 \item{ROSEOB_magnitude}{Scalar showing the magnitude (absolute value) of the outer bound of the region of statistical equivalence.}
 }
 \references{
-Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics. Working paper.
+Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics." Working paper.
 }
 \author{
 Jack Fitzgerald, Vrije Universiteit Amsterdam
