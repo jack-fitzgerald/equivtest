@@ -37,7 +37,7 @@ Running this code automatically prints which test was employed (asymptotically a
 }
   \references{
 Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics." Working paper.
-Goeman, J. J., Solari, A., and Stijnen, T. (2024). "Three-sided hypothesis testing: Simultaneous testing of superiority, equivalence and inferiority." Statistics in Medicine 29(20), 2117-2125."
+Goeman, J. J., Solari, A., and Stijnen, T. (2024). "Three-sided hypothesis testing: Simultaneous testing of superiority, equivalence and inferiority." Statistics in Medicine 29(20), 2117-2125.
   }
 \author{
 Jack Fitzgerald, Vrije Universiteit Amsterdam
