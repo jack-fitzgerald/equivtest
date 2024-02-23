@@ -8,3 +8,5 @@ Description: Performs three-sided testing and calculates regions of statistical 
 License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/jack-fitzgerald/equivtest
+BugReports: https://github.com/jack-fitzgerald/equivtest/issues
