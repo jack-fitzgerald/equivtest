@@ -1,0 +1,42 @@
+\name{ROSE}
+\alias{ROSE}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{
+Function to compute the region of statistical equivalence (ROSE) for an estimate at a given significance and power level.
+}
+\description{
+ROSE computes the region of statistical equivalence for an estimate at a given significance and power level. The region of statistical equivalence is the smallest region wherein one can statistically significantly bound an estimate using a two one-sided tests (TOST) procedure at a given significance level and a pre-specified power level (Fitzgerald 2024). The command produces the bounds of the region of statistical equivalence, its outer bound (that is, the bound furthest from zero), and the magnitude of this outer bound.
+}
+\usage{
+ROSE(estimate, se, alpha = 0.05, power_target = 0.8, df = NA)
+}
+%- maybe also 'usage' for other objects documented here.
+\arguments{
+  \item{estimate}{
+The estimate of interest. Numeric scalar.
+  }
+  \item{se}{
+The estimate of interest's standard error. Numeric scalar, strictly greater than zero.
+  }
+  }
+  \item{alpha}{
+Statistical significance level. Numeric scalar, strictly between zero and one. Defaults to 0.05.
+  }
+  \item{power_target}{
+Power level. Numeric scalar, strictly between zero and one. Defaults to 0.8.
+  }
+  \item{df}{
+Degrees of freedom. Numeric scalar, strictly greater than zero (if provided). If not provided, the asymptotically approximate region of statistical equivalence is reported. If provided, the exact region of statistical equivalence is reported.
+  }
+}
+\value{
+\item{ROSE}{1x2 data.frame showing the bounds of the (1 - alpha) region of statistical equivalence with power level specified by power_target.}
+\item{ROSEOB}{Scalar showing the outer bound of the region of statistical equivalence, which is simply the furthest bound from zero.}
+\item{ROSEOB_magnitude}{Scalar showing the magnitude (absolute value) of the outer bound of the region of statistical equivalence.}
+}
+\references{
+Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics. Working paper.
+}
+\author{
+Jack Fitzgerald, Vrije Universiteit Amsterdam
+}
