@@ -1,4 +1,4 @@
-#ROSE_exact: Function that determines the exact distance a TOST test-statistic must sit above zero to be detectable with a specified power level
+#ROSE_exact: Function that determines the exact distance a TOST test-statistic must sit above zero to be significant with a specified power level
 #df: Numeric greater than zero
 #alpha: Numeric strictly between zero and one
 #power_target: Numeric strictly between zero and one
