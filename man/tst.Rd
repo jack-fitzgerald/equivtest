@@ -15,7 +15,7 @@ tst(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8)
 The estimate of interest. Numeric scalar.
   }
   \item{se}{
-The estimate of interest's standard error. Numeric scalar, strictly greater than zero.
+The standard error of the estimate of interest. Numeric scalar, strictly greater than zero.
   }
   \item{ROPE}{
 The ROPE. Can either be a single numeric scalar (interpreted as the length of a symmetric ROPE around zero) or a vector of two numeric scalars (interpreted as the bounds of the ROPE).
