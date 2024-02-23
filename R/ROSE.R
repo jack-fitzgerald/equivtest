@@ -1,9 +1,9 @@
 #ROSE: Function that determines the ROSE and ROSE outer bound of an estimate at specified significance and power levels
-#estimate: Numeric atomic
-#SE: Numeric atomic > 0
-#alpha: Numeric atomic strictly between zero and one; defaults to 0.05
-#power_target: Numeric atomic strictly between zero and one; defaults to 0.8
-#df: Numeric atomic > 0; defaults to NA
+#estimate: Numeric scalar
+#SE: Numeric scalar > 0
+#alpha: Numeric scalar strictly between zero and one; defaults to 0.05
+#power_target: Numeric scalar strictly between zero and one; defaults to 0.8
+#df: Numeric scalar > 0; defaults to NA
 
 ################
 ##### INIT #####
