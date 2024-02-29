@@ -17,7 +17,7 @@ The estimate of interest. Numeric scalar.
 The standard error of the estimate of interest. Numeric scalar, strictly greater than zero.
   }
   \item{ROPE}{
-The ROPE. Can either be a single numeric scalar (interpreted as the length of a symmetric ROPE around zero) or a vector of two numeric scalars (interpreted as the bounds of the ROPE).
+The ROPE. Can either be a single numeric scalar (interpreted as the length of a symmetric ROPE around zero) or a vector of two different numeric scalars (interpreted as the bounds of the ROPE; in this case one must be >= 0 and one must be <= 0).
   }
   \item{df}{
 Degrees of freedom. Numeric scalar, strictly greater than zero (if provided). If not provided, asymptotically approximate ECIs, ROSEs, and TST results are reported. If provided, exact ECIs, ROSEs, and TST results are reported.
