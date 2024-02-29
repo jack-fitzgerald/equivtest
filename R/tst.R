@@ -144,6 +144,13 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
   #If ROPE is a list of two different numeric scalars...
   if (length(ROPE) == 2) {
 
+    #If the ROPE does not contain zero...
+    if ((ROPE[1] > 0 & ROPE[2] > 0) | (ROPE[1] < 0 & ROPE[2] < 0)) {
+      
+      #... then stop the function
+      stop("If 'ROPE' is of length 2, then it may not be the case that both elements are strictly greater than zero, nor may it be the case that both elements are strictly less than zero")
+      
+    }
     #Generate a region of practical equivalence of [min(ROPE), max(ROPE)]
     ROPE = c(min(ROPE), max(ROPE))
 
