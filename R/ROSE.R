@@ -2,7 +2,7 @@
 #estimate: Numeric scalar
 #SE: Numeric scalar > 0
 #alpha: Numeric scalar strictly between 0 and 0.5; defaults to 0.05
-#power_target: Numeric scalar strictly between 0 and 0.5; defaults to 0.8
+#power_target: Numeric scalar strictly between 0.5 and 1; defaults to 0.8
 #df: Numeric scalar > 0; defaults to NA
 
 ################
@@ -71,11 +71,11 @@ ROSE = function(estimate, se, alpha = 0.05, power_target = 0.8, df = NA) {
     stop("'power_target' must be a numeric scalar")
 
   }
-  #If power_target is not between zero and one...
-  if (power_target <= 0 | power_target >= 0.5) {
+  #If power_target is not between 0.5 and 1...
+  if (power_target <= 0.5 | power_target >= 1) {
 
     #... then stop the function
-    stop("'power_target' must be strictly between 0 and 0.5")
+    stop("'power_target' must be strictly between 0.5 and 1")
 
   }
 
