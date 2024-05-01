@@ -229,28 +229,28 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     if (min(test[, 4]) > alpha) {
 
       #Report that the result is inconclusive
-      conclusion = "The practical significance of the estimate is inconclusive."
+      conclusion = "The significance of the estimate is inconclusive."
 
     }
     #If the test bounding the estimate above the ROPE is significant...
     if (test[1, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically significant and is bounded above the ROPE."
+      conclusion = "The estimate is significantly bounded above the ROPE."
 
     }
     #If the TOST procedure is significant...
     if (test[2, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically equivalent to zero."
+      conclusion = "The estimate is significantly bounded within the ROPE."
 
     }
     #If the test bounding the estimate below the ROPE is significant...
     if (test[3, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically significant and is bounded below the ROPE."
+      conclusion = "The estimate is significantly bounded below the ROPE."
 
     }
 
@@ -333,28 +333,28 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     if (min(test[, 4]) > alpha) {
 
       #Report that the result is inconclusive
-      conclusion = "The practical significance of the estimate is inconclusive."
+      conclusion = "The significance of the estimate is inconclusive."
 
     }
     #If the test bounding the estimate above the ROPE is significant...
     if (test[1, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically significant and is bounded above the ROPE."
+      conclusion = "The estimate is significantly bounded above the ROPE."
 
     }
     #If the TOST procedure is significant...
     if (test[2, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically equivalent to zero."
+      conclusion = "The estimate is significantly bounded within the ROPE."
 
     }
     #If the test bounding the estimate below the ROPE is significant...
     if (test[3, 4] <= alpha) {
 
       #Report the result
-      conclusion = "The estimate is practically significant and is bounded below the ROPE."
+      conclusion = "The estimate is significantly bounded below the ROPE."
 
     }
 
