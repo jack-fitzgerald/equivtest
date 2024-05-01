@@ -116,7 +116,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     if (ROPE[1] == ROPE[2]) {
 
       #... then stop the function
-      stop("If 'ROPE' is of length 2, then its two elements may not be equal to one another")
+      stop("If 'ROPE' is of length 2, then its two elements must not be equal to one another")
 
     }
     #If one of the two elements of ROPE are non-numeric...
