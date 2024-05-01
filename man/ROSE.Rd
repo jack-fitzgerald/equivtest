@@ -18,10 +18,10 @@ The standard error of the estimate of interest. Numeric scalar, strictly greater
   }
   }
   \item{alpha}{
-Statistical significance level. Numeric scalar, strictly between zero and one. Defaults to 0.05.
+Statistical significance level. Numeric scalar, strictly between 0 and 0.5. Defaults to 0.05.
   }
   \item{power_target}{
-Power level. Numeric scalar, strictly between zero and one. Defaults to 0.8.
+Power level. Numeric scalar, strictly between 0 and 0.5. Defaults to 0.8.
   }
   \item{df}{
 Degrees of freedom. Numeric scalar, strictly greater than zero (if provided). If not provided, the asymptotically approximate region of statistical equivalence is reported. If provided, the exact region of statistical equivalence is reported.
