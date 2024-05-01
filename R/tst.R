@@ -220,7 +220,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[3, 4] = pnorm(test[3, 3], lower.tail = TRUE)
 
     #Determine relevant test
-    relevant = which(test[, 4] == min(test[, 4]))
+    relevant = which(test[, 4] == min(test[, 4]))[1]
     #Mark test relevance
     test[relevant, 5] = "Y"
     test[setdiff(c(1:3), relevant), 5] = "N"
@@ -324,7 +324,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[3, 4] = pt(test[3, 3], df = df, lower.tail = TRUE)
 
     #Determine relevant test
-    relevant = which(test[, 4] == min(test[, 4]))
+    relevant = which(test[, 4] == min(test[, 4]))[1]
     #Mark test relevance
     test[relevant, 5] = "Y"
     test[setdiff(c(1:3), relevant)] = "N"
