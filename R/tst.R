@@ -208,7 +208,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     #If the upper bound of the ROPE is the relevant bound...
     if (bound == ROPE[2]) {
 
-      #Store the z-statistic as max(ROPE) - estimate in standard error units
+      #Store the z-statistic as estimate - max(ROPE) in standard error units
       test[2, 3] = (estimate - ROPE[2])/se
       #Store the p-value of the one-sided test in the lower tail
       test[2, 4] = pnorm(test[2, 3], lower.tail = TRUE)
@@ -312,7 +312,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     #If the upper bound of the ROPE is the relevant bound...
     if (bound == ROPE[2]) {
 
-      #Store the t-statistic as max(ROPE) - estimate in standard error units
+      #Store the t-statistic as estimate - max(ROPE) in standard error units
       test[2, 3] = (estimate - ROPE[2])/se
       #Store the p-value of the one-sided test in the lower tail
       test[2, 4] = pt(test[2, 3], df = df, lower.tail = TRUE)
