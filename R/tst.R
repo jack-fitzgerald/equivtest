@@ -3,8 +3,8 @@
 #se: The estimate of interest's standard error; numeric scalar greater than zero
 #ROPE: Can either be a strictly positive numeric scalar (interpreted as the width of a symmetric ROPE around zero), or a vector of two different numeric scalars
 #df: If added, must be a positive integer. If left blank, asymptotic normal approximations are reported for ECIs and ROSEs. If provided, exact ECIs and ROSEs are reported
-#alpha: Defaults to 0.05. If provided, must be a numeric scalar strictly between 0 and 1
-#power: Defaults to 0.8. If provided, must be a numeric scalar strictly between 0 and 1
+#alpha: Defaults to 0.05. If provided, must be a numeric scalar strictly between 0 and 0.5
+#power: Defaults to 0.8. If provided, must be a numeric scalar strictly between 0.5 and 1
 ### OUTPUTS ###
 #bounds: data.frame consisting of ECI(alpha) and ROSE(alpha, power) boundaries (asymptotic or exact, depending on whether degees of freedom are offered)
 #test: Only generated if ROPE is provided; data.frame consisting of the t-statistic and TOST p-value for an equivalence test within the provided ROPE
@@ -53,11 +53,11 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     stop("'alpha' must be a numeric scalar")
 
   }
-  #If alpha is not between zero and one...
-  if (alpha <= 0 | alpha >= 1) {
+  #If alpha is not between 0 and 0.5...
+  if (alpha <= 0 | alpha >= 0.5) {
 
     #... then stop the function
-    stop("'alpha' must be strictly between 0 and 1")
+    stop("'alpha' must be strictly between 0 and 0.5")
 
   }
 
@@ -68,11 +68,11 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     stop("'power' must be a numeric scalar")
 
   }
-  #If power is not between zero and one...
-  if (power <= 0 | power >= 1) {
+  #If power is not between 0.5 and 1...
+  if (power <= 0.5 | power >= 1) {
 
     #... then stop the function
-    stop("'power' must be strictly between 0 and 1")
+    stop("'power' must be strictly between 0.5 and 1")
 
   }
 
