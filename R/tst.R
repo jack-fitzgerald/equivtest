@@ -165,7 +165,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
   #... otherwise...
   else {
 
-    #... the closer bound to the estimate is the relevant bound
+    #... the closer bound to the estimate is the relevant TOST bound
     bound = ROPE[which((c(abs(estimate - ROPE[1]), abs(estimate - ROPE[2])) == min(c(abs(estimate - ROPE[1]), abs(estimate - ROPE[2])))))]
 
   }
@@ -196,7 +196,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[1, 3] = (estimate - ROPE[2])/se
     test[1, 4] = pnorm(test[1, 3], lower.tail = FALSE)
 
-    #If the lower bound of the ROPE is the relevant bound...
+    #If the lower bound of the ROPE is the relevant TOST bound...
     if (bound == ROPE[1]) {
 
       #Store the z-statistic as estimate - min(ROPE) in standard error units
@@ -205,7 +205,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
       test[2, 4] = pnorm(test[2, 3], lower.tail = FALSE)
 
     }
-    #If the upper bound of the ROPE is the relevant bound...
+    #If the upper bound of the ROPE is the relevant TOST bound...
     if (bound == ROPE[2]) {
 
       #Store the z-statistic as estimate - max(ROPE) in standard error units
@@ -300,7 +300,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[1, 3] = (estimate - ROPE[2])/se
     test[1, 4] = pt(test[1, 3], df = df, lower.tail = FALSE)
 
-    #If the lower bound of the ROPE is the relevant bound...
+    #If the lower bound of the ROPE is the relevant TOST bound...
     if (bound == ROPE[1]) {
 
       #Store the t-statistic as estimate - min(ROPE) in standard error units
@@ -309,7 +309,7 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
       test[2, 4] = pt(test[2, 3], df = df, lower.tail = FALSE)
 
     }
-    #If the upper bound of the ROPE is the relevant bound...
+    #If the upper bound of the ROPE is the relevant TOST bound...
     if (bound == ROPE[2]) {
 
       #Store the t-statistic as estimate - max(ROPE) in standard error units
