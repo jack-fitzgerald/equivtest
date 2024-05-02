@@ -225,29 +225,29 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[relevant, 5] = "Y"
     test[setdiff(c(1:3), relevant), 5] = "N"
 
-    #If no p-value is at or below alpha...
-    if (min(test[, 4]) > alpha) {
+    #If no p-value is below alpha...
+    if (min(test[, 4]) >= alpha) {
 
       #Report that the result is inconclusive
       conclusion = "The significance of the estimate is inconclusive."
 
     }
     #If the test bounding the estimate above the ROPE is significant...
-    if (test[1, 4] <= alpha) {
+    if (test[1, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded above the ROPE."
 
     }
     #If the TOST procedure is significant...
-    if (test[2, 4] <= alpha) {
+    if (test[2, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded within the ROPE."
 
     }
     #If the test bounding the estimate below the ROPE is significant...
-    if (test[3, 4] <= alpha) {
+    if (test[3, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded below the ROPE."
@@ -329,29 +329,29 @@ tst = function(estimate, se, ROPE, df = NA, alpha = 0.05, power = 0.8) {
     test[relevant, 5] = "Y"
     test[setdiff(c(1:3), relevant)] = "N"
 
-    #If no p-value is at or below alpha...
-    if (min(test[, 4]) > alpha) {
+    #If no p-value is below alpha...
+    if (min(test[, 4]) >= alpha) {
 
       #Report that the result is inconclusive
       conclusion = "The significance of the estimate is inconclusive."
 
     }
     #If the test bounding the estimate above the ROPE is significant...
-    if (test[1, 4] <= alpha) {
+    if (test[1, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded above the ROPE."
 
     }
     #If the TOST procedure is significant...
-    if (test[2, 4] <= alpha) {
+    if (test[2, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded within the ROPE."
 
     }
     #If the test bounding the estimate below the ROPE is significant...
-    if (test[3, 4] <= alpha) {
+    if (test[3, 4] < alpha) {
 
       #Report the result
       conclusion = "The estimate is significantly bounded below the ROPE."
