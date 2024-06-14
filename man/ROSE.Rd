@@ -33,7 +33,7 @@ Degrees of freedom. Numeric scalar, strictly greater than zero (if provided). If
 \item{ROSEOB_magnitude}{Scalar showing the magnitude (absolute value) of the outer bound of the region of statistical equivalence.}
 }
 \references{
-Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics." Working paper.
+Fitzgerald, Jack (2024). "The Need for Equivalence Testing in Economics". Institute for Replication Discussion Paper Series No. 125. https://www.econstor.eu/handle/10419/296190.
 }
 \author{
 Jack Fitzgerald, Vrije Universiteit Amsterdam
