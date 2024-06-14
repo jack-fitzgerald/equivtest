@@ -36,7 +36,7 @@ Power level. Numeric scalar, strictly between zero and one. Defaults to 0.8.
 Running this code automatically prints which test was employed (asymptotically approximate or exact) as well as a citation disclaimer.
 }
   \references{
-Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics." Working paper.
+Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics." Institute for Replication Discusion Paper No. 125. https://www.econstor.eu/handle/10419/296190.
 Goeman, J. J., Solari, A., and Stijnen, T. (2024). "Three-sided hypothesis testing: Simultaneous testing of superiority, equivalence and inferiority." Statistics in Medicine 29(20), 2117-2125.
   }
 \author{
