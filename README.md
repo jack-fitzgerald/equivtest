@@ -5,5 +5,5 @@ library(devtools)
 install_github("jack-fitzgerald/equivtest")
 ```
 
-Please cite the paper underlying this package:
-Fitzgerald, J. (2024). "The Need for Equivalence Testing in Economics". <i>Institute for Replication Discussion Paper Series</i>, No. 125. https://hdl.handle.net/10419/296190.
+Please cite the paper underlying this package: <br/>
+Fitzgerald, Jack (2024). "The Need for Equivalence Testing in Economics". <i>Institute for Replication Discussion Paper Series</i>, No. 125. https://hdl.handle.net/10419/296190.
