@@ -1,4 +1,4 @@
-***equivtest***
+*equivtest*
 
 You can install this package directly into R with the following code:
 ```
