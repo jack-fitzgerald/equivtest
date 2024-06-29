@@ -1,4 +1,8 @@
-*equivtest*
+# equivtest
+
+This repository is not active. For the updated version of this repostiroy, see https://github.com/jack-fitzgerald/eqtesting.
+
+This repository has been retired due to a name conflict: see Erin Hartman's earlier **equivtest** package at https://github.com/ekhartman/equivtest.
 
 You can install this package directly into R with the following code:
 ```
