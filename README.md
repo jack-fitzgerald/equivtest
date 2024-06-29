@@ -1,4 +1,4 @@
-# equivtest
+# equivtest: Please redirect to https://github.com/jack-fitzgerald/eqtesting
 
 This repository is not active. For the updated version of this repostiroy, see https://github.com/jack-fitzgerald/eqtesting.
 
