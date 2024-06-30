@@ -10,3 +10,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/jack-fitzgerald/equivtest
 BugReports: https://github.com/jack-fitzgerald/equivtest/issues
+Imports: rdd
